@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Campform from "@/components/Campform";
 import Tableimc from "@/components/Tableimc";
+import Link from "next/link";
 
 export default function Calcimc() {
   const [weight, setWeight] = useState<string>("");
@@ -31,6 +32,16 @@ export default function Calcimc() {
       >
         Calcular
       </button>
+      <Link
+        href={{
+          pathname: "/dataimc/Dataimc",
+          query: { weight: weight, height: height, imc: imc },
+        }}
+        className="bg-indigo-900 text-white font-bold py-2 px-4 rounded-md hover:bg-indigo-700 transition-colors duration-300 text-center"
+        style={{ textDecoration: "none" }}
+      >
+        Dados IMC
+      </Link>
       <p className="bg-zinc-100 p-1 text-center text-xl font-bold mt-5">
         Resultado: {imc !== null ? imc.toFixed(2) : "Insira valores válidos"}
       </p>
