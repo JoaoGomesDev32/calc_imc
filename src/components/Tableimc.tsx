@@ -1,33 +1,33 @@
 export default function Tableimc() {
   return (
-    <div>
-      <div>
-        <div>Classificação</div>
-        <div>IMC</div>
+    <div className="mx-2 mb-2">
+      <div className="flex">
+        <div className="w-1/2 border text-center font-bold">Classificação</div>
+        <div className="w-1/2 border text-center font-bold">IMC</div>
       </div>
-      <div>
-        <div>Abaixo do Peso</div>
-        <div>Abaixo de 18,5</div>
+      <div className="flex">
+        <div className="w-1/2 border">Abaixo do Peso</div>
+        <div className="w-1/2 border">Abaixo de 18,5</div>
       </div>
-      <div>
-        <div>Peso Normal</div>
-        <div>Entre 18,5 e 24,9</div>
+      <div className="flex">
+        <div className="w-1/2 border">Peso Normal</div>
+        <div className="w-1/2 border">Entre 18,5 e 24,9</div>
       </div>
-      <div>
-        <div>Sobrepeso</div>
-        <div>Entre 25 e 29,9</div>
+      <div className="flex">
+        <div className="w-1/2 border">Sobrepeso</div>
+        <div className="w-1/2 border">Entre 25 e 29,9</div>
       </div>
-      <div>
-        <div>Obesidade Grau I</div>
-        <div>Entre 30 e 34,9</div>
+      <div className="flex">
+        <div className="w-1/2 border">Obesidade Grau I</div>
+        <div className="w-1/2 border">Entre 30 e 34,9</div>
       </div>
-      <div>
-        <div>Obesidade Grau II</div>
-        <div>Entre 35 e 39,9</div>
+      <div className="flex">
+        <div className="w-1/2 border">Obesidade Grau II</div>
+        <div className="w-1/2 border">Entre 35 e 39,9</div>
       </div>
-      <div>
-        <div>Obesidade Grau III</div>
-        <div>Maior que 40</div>
+      <div className="flex">
+        <div className="w-1/2 border">Obesidade Grau III</div>
+        <div className="w-1/2 border">Maior que 40</div>
       </div>
     </div>
   );
