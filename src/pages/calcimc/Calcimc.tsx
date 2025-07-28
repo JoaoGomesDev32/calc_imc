@@ -34,7 +34,7 @@ export default function Calcimc() {
       <p className="bg-zinc-100 p-1 text-center text-xl font-bold mt-5">
         Resultado: {imc !== null ? imc.toFixed(2) : "Insira valores válidos"}
       </p>
-      <Tableimc />
+      <Tableimc imc={imc} />
     </div>
   );
 }

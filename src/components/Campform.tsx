@@ -1,12 +1,12 @@
 import React from "react";
 
-interface CompformProps {
+interface CampformProps {
   label: string;
   state: string;
   funcState: (value: string) => void;
 }
 
-export default function Compform({ label, state, funcState }: CompformProps) {
+export default function Compform({ label, state, funcState }: CampformProps) {
   return (
     <div className="flex mx-2">
       <label className="flex flex-col w-full">
