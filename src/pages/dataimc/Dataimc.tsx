@@ -23,7 +23,7 @@ export default function Dataimc() {
   return (
     <div>
       <div>
-        <div>
+        <div className="campoForm">
           <label>Nome</label>
           <input
             type="text"
@@ -31,27 +31,51 @@ export default function Dataimc() {
             onChange={(e) => setName(e.target.value)}
           />
         </div>
-        <div>
+        <div className="campoForm">
           <label>Peso</label>
-          <input type="text" value={weight} readOnly />
+          <input className="inputDados" type="text" value={weight} readOnly />
         </div>
-        <div>
+        <div className="campoForm">
           <label>Altura</label>
-          <input type="text" value={height} readOnly />
+          <input className="inputDados" type="text" value={height} readOnly />
         </div>
-        <div>
+        <div className="campoForm">
           <label>IMC</label>
-          <input type="text" value={imc} readOnly />
+          <input className="inputDados" type="text" value={imc} readOnly />
         </div>
-        <div>
+        <div className="campoForm">
           <label>Data</label>
-          <input type="text" value={date} readOnly />
+          <input className="inputDados" type="text" value={date} readOnly />
         </div>
-        <div>
+        <div className="botaoDados">
           <button>Gravar</button>
         </div>
       </div>
-      <div>GRID</div>
+      <div className="grid">
+        <div className="gridLinhaTitulos">
+          <div className="gridTitulos">Nome</div>
+          <div className="gridTitulos">Peso</div>
+          <div className="gridTitulos">Altura</div>
+          <div className="gridTitulos">IMC</div>
+          <div className="gridTitulos">Data</div>
+        </div>
+        <div className="linhaDados">
+          <div className="gridLinhas">
+            <div className="gridLinha">Nome 1</div>
+            <div className="gridLinha">Peso 1</div>
+            <div className="gridLinha">Altura 1</div>
+            <div className="gridLinha">IMC 1</div>
+            <div className="gridLinha">Data 1</div>
+          </div>
+          <div className="gridLinhas">
+            <div className="gridLinha">Nome 2</div>
+            <div className="gridLinha">Peso 2</div>
+            <div className="gridLinha">Altura 2</div>
+            <div className="gridLinha">IMC 2</div>
+            <div className="gridLinha">Data 2</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

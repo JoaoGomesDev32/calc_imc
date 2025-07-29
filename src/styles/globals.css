@@ -4,3 +4,58 @@
   background-color: brown;
   color: white;
 }
+
+.campoForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.inputDados {
+  border: 1px solid black;
+  padding: 0.25rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.botaoDados {
+  background-color: rgb(49, 46, 129);
+  color: #fff;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.gridLinhaTitulos {
+  background-color: rgb(49, 46, 129);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.gridTitulos {
+  width: 20%;
+}
+
+.linhaDados {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.gridLinhas {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.gridLinha {
+  width: 20%;
+}
