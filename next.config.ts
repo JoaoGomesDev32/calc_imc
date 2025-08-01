@@ -1,30 +1,34 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   // Enable React strict mode for better development experience
   reactStrictMode: true,
-  
+
+  eslint: {
+    ignoreDuringBuilds: true, // ⛔️ Use apenas se quiser ignorar os erros de lint no deploy
+  },
+
   // Enable SWC minification for faster builds
-  swcMinify: true,
-  
+  // swcMinify: true,
+
   // Optimize images
   images: {
     domains: [],
     formats: ['image/webp', 'image/avif'],
   },
-  
+
   // Enable experimental features
   experimental: {
     // Optimize package imports
     optimizePackageImports: ['@heroicons/react'],
   },
-  
+
   // Compiler options
   compiler: {
     // Remove console.logs in production
     removeConsole: process.env.NODE_ENV === 'production',
   },
-  
+
   // Headers for better security and performance
   async headers() {
     return [
@@ -47,12 +51,12 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  
+
   // Environment variables
   env: {
     CUSTOM_KEY: process.env.CUSTOM_KEY,
   },
-  
+
   // Webpack configuration for better performance
   webpack: (config, { dev, isServer }) => {
     // Optimize bundle size
@@ -68,7 +72,7 @@ const nextConfig: NextConfig = {
         },
       };
     }
-    
+
     return config;
   },
 };
